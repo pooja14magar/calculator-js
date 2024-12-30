@@ -1,0 +1,174 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(198, 145, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+
+}
+.form{
+    background-color: #fff;
+    border-radius: 6px;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form{
+    margin-top:30px ;
+}
+
+.field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 15px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #CACACA;
+    border-radius: 6px; 
+    outline: none;
+}
+
+.field input:focus{
+    border-bottom-width: 2px
+}
+
+.field button{
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: #0171d3;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    text-decoration: none;
+    color: #0171d3;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px; 
+ }
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+   background-color:#d4d4d4;
+   margin: 36px 0;
+}
+
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #232836;
+    padding: 0 15px;
+}       
+
+.media-options a{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+a.facebook{
+    background-color: #4267b2;
+    color: white;
+}
+
+ a.facebook  .facebook-icon {
+    height: 28px;
+    width: 28px;
+    background-color: #fff;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.facebook-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+a.google{
+    border: 1px solid #CACACA;
+}
+
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
